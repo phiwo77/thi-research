@@ -3,10 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Academic research profile of Philipp Wolff, M.Eng. candidate at Technische Hochschule Ingolstadt. Master's research on deep-learning-based surrogate modeling of SUMO traffic simulations." />
-  <meta name="robots" content="index,follow" />
+  <title>THI Master's Research Project | Philipp Wolff</title>
+
+  <meta name="description" content="Academic master's research project by Philipp Wolff at Technische Hochschule Ingolstadt (THI). Primary domain: Transportation Engineering and Mobility Research. Topic: data-driven surrogate modeling of SUMO traffic simulations for route-specific vehicle velocity profiles." />
+  <meta name="keywords" content="Transportation Engineering, Mobility Research, Vehicle Engineering, Traffic Simulation, SUMO, Surrogate Modeling, Vehicle Dynamics, Route Modeling, Deep Learning, Time Series, Technische Hochschule Ingolstadt, THI, Master's Thesis, Master of Engineering, Electromobility, Vehicle Electrification" />
+  <meta name="author" content="Philipp Wolff" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="THI Master's Research Project | Philipp Wolff" />
+  <meta property="og:description" content="Transportation Engineering and Mobility Research project at Technische Hochschule Ingolstadt using data-driven surrogate modeling of SUMO traffic simulations." />
+  <meta property="og:url" content="https://phiwo77.github.io/thi-research/" />
+  <meta property="og:site_name" content="Philipp Wolff – Academic Research Project" />
+
+  <meta name="DC.creator" content="Philipp Wolff" />
+  <meta name="DC.publisher" content="Personal academic research profile affiliated with Technische Hochschule Ingolstadt" />
+  <meta name="DC.subject" content="Transportation Engineering; Mobility Research; Vehicle Engineering; Traffic Simulation; SUMO; Surrogate Modeling" />
+  <meta name="DC.type" content="Research Project" />
+
   <link rel="canonical" href="https://phiwo77.github.io/thi-research/" />
-  <title>Philipp Wolff | Master's Research Profile</title>
+
   <style>
     :root {
       --bg: #f6f7f9;
@@ -16,7 +32,8 @@
       --line: #dfe4ea;
       --accent: #173f67;
       --accent-soft: #edf3f8;
-      --max: 1080px;
+      --success: #215b45;
+      --max: 1100px;
     }
 
     * { box-sizing: border-box; }
@@ -31,14 +48,13 @@
 
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
     .wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
 
     header {
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.94);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--line);
     }
@@ -51,34 +67,49 @@
       gap: 24px;
     }
 
-    .brand { font-weight: 760; letter-spacing: -.02em; color: var(--text); }
-    .links { display: flex; flex-wrap: wrap; gap: 18px; font-size: .94rem; }
+    .brand { font-weight: 780; letter-spacing: -.02em; color: var(--text); }
+    .links { display: flex; flex-wrap: wrap; gap: 18px; font-size: .92rem; }
 
-    .hero { padding: 86px 0 64px; }
+    .hero { padding: 76px 0 56px; }
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.35fr .65fr;
+      grid-template-columns: 1.4fr .6fr;
       gap: 48px;
       align-items: center;
     }
 
     .eyebrow {
-      font-size: .82rem;
-      font-weight: 750;
+      font-size: .80rem;
+      font-weight: 780;
       letter-spacing: .12em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     h1, h2, h3 { line-height: 1.15; letter-spacing: -.025em; }
-    h1 { font-size: clamp(2.5rem, 7vw, 5rem); margin: 0 0 14px; }
-    h2 { font-size: clamp(1.7rem, 4vw, 2.45rem); margin: 0 0 18px; }
-    h3 { font-size: 1.08rem; margin: 0 0 8px; }
+    h1 { font-size: clamp(2.35rem, 6vw, 4.7rem); margin: 0 0 14px; }
+    h2 { font-size: clamp(1.65rem, 4vw, 2.35rem); margin: 0 0 18px; }
+    h3 { font-size: 1.06rem; margin: 0 0 8px; }
     p { margin: 0 0 16px; }
 
-    .lead { font-size: 1.18rem; color: var(--muted); max-width: 780px; }
+    .lead { font-size: 1.18rem; color: var(--muted); max-width: 800px; }
     .meta { margin-top: 24px; color: var(--muted); }
+
+    .statusbar {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 10px;
+    }
+    .status {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .status strong { display: block; font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 3px; }
+    .status span { font-weight: 700; }
 
     .monogram {
       width: min(280px, 70vw);
@@ -96,7 +127,7 @@
       letter-spacing: -.08em;
     }
 
-    section { padding: 64px 0; }
+    section { padding: 60px 0; }
     section + section { border-top: 1px solid var(--line); }
 
     .section-grid {
@@ -105,7 +136,7 @@
       gap: 48px;
     }
 
-    .kicker { color: var(--muted); max-width: 28ch; }
+    .kicker { color: var(--muted); max-width: 30ch; }
 
     .cards {
       display: grid;
@@ -113,13 +144,15 @@
       gap: 18px;
     }
 
-    .card {
+    .card, .project {
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 18px;
       padding: 22px;
       box-shadow: 0 8px 28px rgba(18, 39, 62, .04);
     }
+    .project { border-radius: 22px; padding: 30px; }
+    .project-title { font-size: 1.35rem; font-weight: 780; margin-bottom: 10px; }
 
     .pill-row { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
     .pill {
@@ -127,27 +160,31 @@
       border-radius: 999px;
       background: var(--accent-soft);
       border: 1px solid #d7e2ec;
-      font-size: .88rem;
+      font-size: .87rem;
       color: var(--accent);
-      font-weight: 650;
+      font-weight: 660;
     }
 
-    .project {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 30px;
-    }
-
-    .project-title { font-size: 1.35rem; font-weight: 760; margin-bottom: 10px; }
-    .small { font-size: .91rem; color: var(--muted); }
-
-    dl { display: grid; grid-template-columns: 170px 1fr; gap: 10px 18px; margin: 22px 0 0; }
-    dt { font-weight: 720; color: var(--text); }
+    dl { display: grid; grid-template-columns: 190px 1fr; gap: 11px 18px; margin: 0; }
+    dt { font-weight: 740; color: var(--text); }
     dd { margin: 0; color: var(--muted); }
 
+    .verification {
+      display: grid;
+      gap: 12px;
+    }
+    .verification a {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 14px 16px;
+    }
+    .verification a strong { display: block; color: var(--text); margin-bottom: 2px; }
+    .verification a span { color: var(--muted); font-size: .92rem; }
+
     .note {
-      margin-top: 24px;
+      margin-top: 22px;
       border-left: 4px solid var(--accent);
       background: var(--accent-soft);
       padding: 16px 18px;
@@ -162,10 +199,10 @@
     }
 
     @media (max-width: 760px) {
-      .hero { padding-top: 56px; }
+      .hero { padding-top: 52px; }
       .hero-grid, .section-grid { grid-template-columns: 1fr; }
       .monogram { margin: 8px 0 0; width: 180px; }
-      .cards { grid-template-columns: 1fr; }
+      .cards, .statusbar { grid-template-columns: 1fr; }
       .links { display: none; }
       dl { grid-template-columns: 1fr; gap: 3px; }
       dd { margin-bottom: 10px; }
@@ -175,37 +212,71 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Philipp Wolff",
-    "url": "https://phiwo77.github.io/thi-research/",
-    "sameAs": ["https://github.com/phiwo77"],
-    "description": "M.Eng. candidate in Electromobility and Vehicle Electrification at Technische Hochschule Ingolstadt, working on a master's research project on data-driven surrogate modeling of traffic simulation.",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Technische Hochschule Ingolstadt"
-    },
-    "knowsAbout": [
-      "Deep Learning",
-      "Traffic Simulation",
-      "SUMO",
-      "Vehicle Electrification",
-      "Python",
-      "Time-Series Modeling"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://phiwo77.github.io/thi-research/#philipp-wolff",
+        "name": "Philipp Wolff",
+        "url": "https://phiwo77.github.io/thi-research/",
+        "sameAs": ["https://github.com/phiwo77"],
+        "jobTitle": "Master's Researcher / M.Eng. Candidate",
+        "description": "Master's researcher at Technische Hochschule Ingolstadt working in Transportation Engineering and Mobility Research using traffic simulation and data-driven surrogate modeling.",
+        "affiliation": {
+          "@id": "https://phiwo77.github.io/thi-research/#thi"
+        },
+        "knowsAbout": [
+          "Transportation Engineering",
+          "Mobility Research",
+          "Vehicle Engineering",
+          "Traffic Simulation",
+          "SUMO",
+          "Vehicle Dynamics",
+          "Surrogate Modeling",
+          "Deep Learning",
+          "Time-Series Modeling",
+          "Python"
+        ]
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://phiwo77.github.io/thi-research/#thi",
+        "name": "Technische Hochschule Ingolstadt",
+        "alternateName": "THI",
+        "url": "https://www.thi.de/"
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://phiwo77.github.io/thi-research/#project",
+        "name": "Deep-learning-based surrogate modeling of SUMO traffic simulations for route-specific velocity profile prediction",
+        "creator": {
+          "@id": "https://phiwo77.github.io/thi-research/#philipp-wolff"
+        },
+        "about": [
+          "Transportation Engineering",
+          "Mobility Research",
+          "Traffic Simulation",
+          "Vehicle Dynamics",
+          "Surrogate Modeling"
+        ],
+        "keywords": "Transportation Engineering, Mobility Research, Vehicle Engineering, SUMO, Traffic Simulation, Surrogate Modeling, Deep Learning",
+        "educationalLevel": "Master's thesis"
+      }
     ]
   }
   </script>
 </head>
+
 <body>
   <header>
     <div class="wrap">
       <nav aria-label="Primary navigation">
-        <a class="brand" href="#top">Philipp Wolff</a>
+        <a class="brand" href="#top">THI Research · Philipp Wolff</a>
         <div class="links">
           <a href="#research">Research</a>
           <a href="#methods">Methods</a>
-          <a href="#context">Academic context</a>
-          <a href="#verification">Verification</a>
-          <a href="https://github.com/phiwo77" target="_blank" rel="noopener">GitHub</a>
+          <a href="#academic">Academic status</a>
+          <a href="#evidence">Institutional evidence</a>
+          <a href="https://github.com/phiwo77" target="_blank" rel="me noopener">GitHub</a>
         </div>
       </nav>
     </div>
@@ -215,10 +286,17 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">Master's Research Profile</div>
+          <div class="eyebrow">Academic Master's Research Project · Technische Hochschule Ingolstadt</div>
           <h1>Philipp Wolff</h1>
-          <p class="lead">M.Eng. candidate in <strong>Electromobility and Vehicle Electrification</strong> at Technische Hochschule Ingolstadt (THI). My master's research focuses on replacing repeated microscopic traffic simulation with a data-driven surrogate model for route-specific vehicle speed profiles.</p>
-          <p class="meta">Research areas: deep learning · traffic simulation · vehicle dynamics · route modeling · Python</p>
+          <p class="lead">M.Eng. candidate in <strong>Electromobility and Vehicle Electrification</strong> at Technische Hochschule Ingolstadt (THI). This master's thesis is an academic research project in <strong>Transportation Engineering and Mobility Research</strong>, investigating data-driven surrogate models for microscopic traffic simulation and route-specific vehicle velocity profiles.</p>
+
+          <div class="statusbar" aria-label="Research status">
+            <div class="status"><strong>Primary domain</strong><span>Transportation Engineering</span></div>
+            <div class="status"><strong>Research field</strong><span>Mobility & Vehicle Research</span></div>
+            <div class="status"><strong>Academic status</strong><span>Master's thesis in progress</span></div>
+          </div>
+
+          <p class="meta"><strong>Methods:</strong> SUMO traffic simulation · Deep Learning · Time-Series Modeling · Vehicle Dynamics · Python</p>
         </div>
         <div class="monogram" aria-label="PW monogram">PW</div>
       </div>
@@ -228,21 +306,24 @@
       <div class="wrap section-grid">
         <div>
           <div class="eyebrow">Research</div>
-          <h2>Master's project</h2>
-          <p class="kicker">Surrogate modeling of microscopic traffic simulation for dynamic route behavior.</p>
+          <h2>Research question</h2>
+          <p class="kicker">Can a learned surrogate reproduce relevant dynamic driving behavior without repeatedly executing the full microscopic traffic simulation?</p>
         </div>
         <div class="project">
           <div class="project-title">Deep-learning-based surrogate modeling of SUMO traffic simulations for route-specific velocity profile prediction</div>
-          <p>The project investigates whether a neural-network-based model can learn dynamic driving behavior generated by SUMO and predict realistic velocity profiles from route-related input information. The objective is to reduce dependence on repeated simulation runs while retaining relevant driving dynamics such as acceleration, braking, stops and transitions.</p>
-          <p>The research is conducted as part of my master's thesis at Technische Hochschule Ingolstadt.</p>
+          <p>The project investigates whether neural-network-based models can learn dynamic driving behavior generated by SUMO and predict realistic velocity profiles from route-related information. The goal is to reduce dependence on repeated simulation runs while retaining relevant driving dynamics such as acceleration, braking, stops and transitions.</p>
+          <p>The predicted profiles are intended to support route-sensitive vehicle and energy-demand analyses. The scientific application domain is mobility and transportation; machine learning is used as the modeling methodology.</p>
 
           <div class="pill-row" aria-label="Research keywords">
+            <span class="pill">Transportation Engineering</span>
+            <span class="pill">Mobility Research</span>
+            <span class="pill">Vehicle Engineering</span>
             <span class="pill">SUMO</span>
+            <span class="pill">Traffic Simulation</span>
+            <span class="pill">Surrogate Modeling</span>
+            <span class="pill">Vehicle Dynamics</span>
             <span class="pill">Deep Learning</span>
             <span class="pill">Time Series</span>
-            <span class="pill">Python</span>
-            <span class="pill">Traffic Modeling</span>
-            <span class="pill">Surrogate Model</span>
           </div>
         </div>
       </div>
@@ -251,76 +332,93 @@
     <section id="methods">
       <div class="wrap section-grid">
         <div>
-          <div class="eyebrow">Methods</div>
+          <div class="eyebrow">Scientific method</div>
           <h2>Research workflow</h2>
-          <p class="kicker">A simulation-to-learning pipeline with quantitative validation.</p>
+          <p class="kicker">Simulation, data-driven modeling and quantitative validation.</p>
         </div>
         <div class="cards">
           <article class="card">
-            <h3>1 · Simulation data</h3>
+            <h3>1 · Reference simulation</h3>
             <p>Generation and processing of route-dependent velocity trajectories using SUMO on real road-network representations.</p>
           </article>
           <article class="card">
-            <h3>2 · Model development</h3>
-            <p>Supervised deep-learning models are trained to infer dynamic profiles from route information. Sequence models such as GRU and temporal convolutional approaches are evaluated.</p>
+            <h3>2 · Surrogate-model development</h3>
+            <p>Supervised sequence models are trained to infer dynamic driving profiles from route-related information, including GRU and temporal-convolutional approaches.</p>
           </article>
           <article class="card">
-            <h3>3 · Evaluation</h3>
-            <p>Model quality is assessed using held-out data and metrics that capture velocity accuracy as well as stops and dynamic transitions.</p>
+            <h3>3 · Quantitative validation</h3>
+            <p>Model performance is evaluated on held-out data with metrics covering velocity accuracy, stops and dynamic transitions.</p>
           </article>
           <article class="card">
-            <h3>4 · Simulation replacement</h3>
-            <p>The final objective is a computationally efficient prediction workflow suitable for repeated route and energy-demand analyses without rerunning the full microscopic simulation each time.</p>
+            <h3>4 · Mobility application</h3>
+            <p>The resulting surrogate model is assessed as a computationally efficient replacement for repeated simulation in route- and energy-sensitive analyses.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="context">
+    <section id="academic">
       <div class="wrap section-grid">
         <div>
-          <div class="eyebrow">Academic context</div>
+          <div class="eyebrow">Academic status</div>
           <h2>Institutional affiliation</h2>
-          <p class="kicker">Transparent distinction between student research and institutional representation.</p>
+          <p class="kicker">The project is part of an accredited Master of Engineering programme at THI.</p>
         </div>
         <div>
           <dl>
             <dt>Researcher</dt>
             <dd>Philipp Wolff</dd>
-            <dt>Degree</dt>
-            <dd>Master of Engineering candidate</dd>
-            <dt>Program</dt>
-            <dd>Elektromobilität und Fahrzeugelektrifizierung</dd>
+            <dt>Role</dt>
+            <dd>Graduate student / Master's researcher</dd>
+            <dt>Degree programme</dt>
+            <dd>Elektromobilität und Fahrzeugelektrifizierung (M.Eng.)</dd>
             <dt>Institution</dt>
             <dd><a href="https://www.thi.de/" target="_blank" rel="noopener">Technische Hochschule Ingolstadt (THI)</a></dd>
+            <dt>Programme status</dt>
+            <dd>Accredited M.Eng. programme; master's thesis is a 30 ECTS programme component</dd>
             <dt>Project type</dt>
             <dd>Master's thesis / academic research project</dd>
-            <dt>GitHub</dt>
-            <dd><a href="https://github.com/phiwo77" target="_blank" rel="noopener">github.com/phiwo77</a></dd>
+            <dt>Primary domain</dt>
+            <dd>Transportation Engineering / Mobility Research / Vehicle Engineering</dd>
+            <dt>Methodological domain</dt>
+            <dd>Traffic Simulation / Deep Learning / Time-Series Modeling</dd>
+            <dt>Public profile</dt>
+            <dd><a href="https://github.com/phiwo77" target="_blank" rel="me noopener">GitHub: phiwo77</a></dd>
             <dt>Status</dt>
             <dd>Research in progress</dd>
           </dl>
-
-          <!-- OPTIONAL SUPERVISOR BLOCK:
-          Add this once you have the official THI professor profile URL.
-          Example:
-          <dt>Academic supervisor</dt>
-          <dd><a href="OFFICIAL-THI-PROFILE-URL">Prof. Dr. ...</a></dd>
-          -->
         </div>
       </div>
     </section>
 
-    <section id="verification">
+    <section id="evidence">
       <div class="wrap section-grid">
         <div>
-          <div class="eyebrow">Verification</div>
-          <h2>Research identity</h2>
-          <p class="kicker">Useful as a public research profile and supporting reference.</p>
+          <div class="eyebrow">Institutional evidence</div>
+          <h2>Official references</h2>
+          <p class="kicker">Independent links to the university and the degree programme provide verifiable academic context.</p>
         </div>
         <div>
-          <p>This page documents my master's research activities and academic context. It can be used as a public project profile alongside official university records, a supervisor's institutional profile and, where applicable, a public code repository.</p>
-          <div class="note"><strong>Transparency note:</strong> This is a personal academic research profile. It is not an official THI institutional page and does not claim Principal Investigator (PI) status.</div>
+          <div class="verification">
+            <a href="https://www.thi.de/" target="_blank" rel="noopener">
+              <strong>Technische Hochschule Ingolstadt (THI)</strong>
+              <span>Official university website</span>
+            </a>
+            <a href="https://www.thi.de/studium/studienangebote/details/elektromobilitaet-und-fahrzeugelektrifizierung-meng/" target="_blank" rel="noopener">
+              <strong>Official M.Eng. programme page</strong>
+              <span>Programme description, accreditation status, curriculum and master's thesis component</span>
+            </a>
+            <a href="https://www.thi.de/hochschule/ueber-uns/hochschulorganisation/stabsstelle-recht/satzungen-studienfakultaet-campus-fuer-weiterbildung/weiterbildende-masterstudiengaenge/spo-master-elektromobilitaet-und-fahrzeugelektrifizierung/" target="_blank" rel="noopener">
+              <strong>Official study and examination regulations</strong>
+              <span>THI regulations for the M.Eng. programme</span>
+            </a>
+            <a href="https://github.com/phiwo77/thi-research" target="_blank" rel="noopener">
+              <strong>Public project website repository</strong>
+              <span>Source repository for this academic research profile</span>
+            </a>
+          </div>
+
+          <div class="note"><strong>Transparency:</strong> This is a personal academic research-project page documenting a master's thesis carried out in the academic context of THI. It is not an official THI website and does not claim Principal Investigator (PI) or research-group-lead status.</div>
         </div>
       </div>
     </section>
@@ -328,7 +426,9 @@
 
   <footer>
     <div class="wrap">
-      © 2026 Philipp Wolff · Personal academic research profile · <a href="https://github.com/phiwo77" target="_blank" rel="noopener">GitHub</a> · Not an official website of Technische Hochschule Ingolstadt.
+      © 2026 Philipp Wolff · Academic master's research project · Technische Hochschule Ingolstadt context ·
+      <a href="https://github.com/phiwo77" target="_blank" rel="me noopener">GitHub</a> ·
+      Not an official website of Technische Hochschule Ingolstadt.
     </div>
   </footer>
 </body>
