@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you reference this master's research project, please cite the project page and author."
+title: "Deep-learning-based surrogate modeling of SUMO traffic simulations for route-specific velocity profile prediction"
+authors:
+  - family-names: "Wolff"
+    given-names: "Philipp"
+abstract: "Master's research project at Technische Hochschule Ingolstadt investigating data-driven surrogate modeling of SUMO traffic simulations for route-specific vehicle velocity profile prediction."
+keywords:
+  - Transportation Engineering
+  - Mobility Research
+  - Vehicle Engineering
+  - Traffic Simulation
+  - SUMO
+  - Surrogate Modeling
+  - Vehicle Dynamics
+  - Deep Learning
+  - Time-Series Modeling
+url: "https://phiwo77.github.io/thi-research/"
