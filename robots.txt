@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://phiwo77.github.io/thi-research/sitemap.xml
