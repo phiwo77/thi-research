@@ -16,3 +16,13 @@ https://phiwo77.github.io/thi-research/
 ## Transparency
 
 This is a personal academic research profile. It is not an official website of Technische Hochschule Ingolstadt and does not claim Principal Investigator (PI) status. Official institutional verification should use the university profile of the supervising professor or research group where required.
+
+
+## Academic supervision
+
+Academic supervisor: **Prof. Dr.-Ing. Alexander Gelner**, Technische Hochschule Ingolstadt (THI).
+
+Official THI profile:
+https://www.thi.de/personen/prof-dr-alexander-gelner/
+
+THI lists his subject area as **Innovative Drive Systems and Commercial Vehicle Technology**.
