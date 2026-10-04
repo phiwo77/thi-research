@@ -1,6 +1,6 @@
-# THI Research – Philipp Wolff
+# Technische Hochschule Ingolstadt – Master's Research Project – Philipp Wolff
 
-Personal academic research profile for Philipp Wolff, M.Eng. candidate in Electromobility and Vehicle Electrification at Technische Hochschule Ingolstadt (THI).
+Personal academic research profile for Philipp Wolff, M.Eng. candidate in Electromobility and Vehicle Electrification at Technische Hochschule Ingolstadt (THI). Philipp Wolff is the primary researcher and technical project lead for the scope of this master's thesis project.
 
 The page documents the master's research project on deep-learning-based surrogate modeling of SUMO traffic simulations for route-specific velocity profile prediction.
 
