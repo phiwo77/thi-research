@@ -1,0 +1,3 @@
+# Unterstützter Laufzeitbereich (Tkinter wird von der Python-Installation bereitgestellt).
+numpy>=1.24,<3
+Pillow>=10,<13

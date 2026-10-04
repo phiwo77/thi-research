@@ -1,0 +1,3 @@
+# Laufzeitabhängigkeiten für Pipeline, Inferenz, Grafiken und Tests.
+numpy>=1.24,<3
+Pillow>=10,<13
